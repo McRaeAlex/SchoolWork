@@ -1,0 +1,23 @@
+JOBS: 10
+Servicing 89
+Servicing 29
+Servicing 72
+Servicing 45
+Servicing 39
+Servicing 2
+Servicing 9
+Servicing 23
+Servicing 54
+Servicing 85
+Time to run FCFS: 345
+Servicing 2
+Servicing 9
+Servicing 23
+Servicing 29
+Servicing 39
+Servicing 45
+Servicing 54
+Servicing 72
+Servicing 85
+Servicing 89
+Time to run SSTF: 89

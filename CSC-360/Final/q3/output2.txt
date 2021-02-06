@@ -1,0 +1,3 @@
+I am the parent -1576786112
+I am the child -1576790272
+compare.md  original  original.c  output1.txt  output2.txt  threads  threads.c

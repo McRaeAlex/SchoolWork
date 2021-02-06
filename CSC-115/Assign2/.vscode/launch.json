@@ -1,0 +1,75 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Calculator",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Calculator",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Evaluator",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Evaluator",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Operator",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Operator",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OperatorTokenizer",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "OperatorTokenizer",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PostfixTokenizer",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "PostfixTokenizer",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringStack",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "StringStack",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 0
+        }
+    ]
+}

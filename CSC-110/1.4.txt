@@ -1,0 +1,68 @@
+Decomposition:
+
+	Breaking down complex problems into smaller more managable ones
+
+	Proceedural:
+
+		Breaking down the problem into steps
+		ex. baking a cake
+
+	Object-Oriented:
+
+		Breaking the problem into object that interact with eachother
+
+	Iterative Enhancement:
+
+		Producing a program in stages. Each step being something that can be tested to ensure
+		functionality
+
+Static Methods:
+
+	A block of statements given a name. that when called preforms a function.
+
+	Structure:
+
+		public static void <name>(){
+			<statement>
+			<statement>
+			...
+		}
+
+	Method calls:
+
+		A command to execute another method, which causes all of the statement inside that ethod to
+		be executed. Methods are executed by writing their name with parenthises and a semicolon.
+		ex. drawBox();
+		A method can always call another method, even itself.
+
+Key words:
+
+	public:
+
+		ideicates that method is available to be used by all parts of your program
+
+	static:
+
+		says that this is non object orientated
+
+	void:
+
+		this says that the function executes statements but does not produce any value
+
+	<name>:
+
+		this is the name of the method
+
+	():
+
+		this is values that could be passed into your method
+
+Flow Control:
+
+	The order in which java statements a executed
+
+Runtime errors:
+
+	a error that compiles fine, but when ran cannot compute.
+	ex. 1/0 or creating an inifinte loop
+	

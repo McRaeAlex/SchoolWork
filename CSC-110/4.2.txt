@@ -1,0 +1,17 @@
+Cumulative Algorithim:
+
+    An operation in which an overall value is computed incrementally using a
+    loop
+
+    Ex. Sum:
+        int sum;
+        for (int i = 0; i < 10; i++) {
+            sum += i; //this is the same as sum = sum + i
+        }
+
+Roundoff Errors:
+
+    A numerical error that occurs because floating-point numbers are stored
+    as approximations instead of exact values
+
+    

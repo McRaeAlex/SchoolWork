@@ -1,0 +1,64 @@
+Intro to graphics:
+
+    in order to use graphics you must import the awt library
+    ex. import java.awt.*;
+    awt stands for abstract window toolkit
+
+    To create a new drawing panel you simply call its constructor
+    like any other object, it takes two parameters height and width
+    ex. DrawingPanel <name> = new DrawingPanel(<width>, <height>);
+
+    Pixel:
+
+        A single small dot on a computer screen
+
+    DrawingPanel Methods:
+
+        getGraphics() --> returns a Graphics obkect that can be used
+        to draw onto the panel
+        
+        setBackground(<color>) --> sets the background color given a
+        color as a parameter
+
+    DrawingPanel characteristics:
+
+        The drawing panel works off a coordinate system where 0,0 is
+        the top left pixel of the panel
+
+    Graphics Object:
+
+        This is the object that will be used to draw on the panel
+
+        Methods:
+
+            drawLine(x1, y1, x2, y2) --> draws a line from the first
+            set of coordinates to the second
+            
+            drawOval(x,y,width,height) --> draws an oval that fits
+            the rectangle provided in the parameters
+            
+            drawRect(x,y,width,height) --> draws a rectangle with the
+            given points
+
+            drawString(message,x,y) --> draws the given text with its lower left
+            corner being the x-y coordinates
+
+            fillOval(x,y,width,height) --> draws an oval with a color
+
+            fillRect(x,y,width,height) --> draws a rectangle with a color
+
+            setColor(color) --> sets the graphics color
+
+            setFont(font) --> sets the graphics font
+
+        Font:
+
+            A style of characters
+
+        Images:
+
+            DrawingPanel is also able to draw images
+
+            This can be done with the following syntax:
+            Image <name> = <panel>.loadImage("<filename>");
+            <graphics>.drawImage(<name>, <x>, <y>, <panel>);

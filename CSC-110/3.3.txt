@@ -1,0 +1,84 @@
+Objects:
+
+    Definition:
+
+        A programming entity that contains state (data) and behavior (methods)
+
+    Class:
+
+        A category or type of object in java
+
+    Constructor:
+
+        A method that initalizes an object
+
+    String Objects:
+
+        Sequence of chars
+
+        Functions:
+
+            Length() --> returns the length of the string
+            charAt() --> returns the character at a certain index
+            subString() --> returns a string from a previous string between 2 index's
+
+        Index:
+
+            Strings are just arrays of characters so each character has a index
+
+            [0,1,2,3]
+            [J,a,v,a]
+
+            Index's in java start at 0
+
+    Immutable Objects:
+
+        These are object that their values can never change. This does not mean that they cannot be
+        reassigned
+
+    Package:
+
+        A collection of related java classes
+
+        Import declaration:
+
+            import <package>;
+
+            Ex. 
+            import java.util.*; //* means import everything
+            or
+            import java.util.math;
+
+Exceptions:
+
+    Absolutely one of the biggest things you will encounter is runtime exceptions such as null
+    pointer exception, these are logic errors. Error handling will be covered later.
+
+Interactive Programs and Scanner Objects:
+
+    Console input:
+
+        Responses typed by the user when an interactive program pauses for input
+
+    Scanner Object:
+
+        This is an object that allows us to read from the command line
+
+        Syntax:
+
+            Scanner <name> = new Scanner(System.in);
+
+        Token:
+
+            A single input from the user these are seperated by whitespace
+
+        Scanner Functions:
+
+            nextInt() --> reads and returns the next int value
+            next() --> reads and returns the next token as a string
+            nextLine() --> reads the line and returns it as a string
+            nextDouble() --> reads and returns the next double
+
+        WhiteSpace:
+
+            Spaces, Tabs, and Newline characters

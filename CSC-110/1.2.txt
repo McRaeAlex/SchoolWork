@@ -1,0 +1,79 @@
+Methods:
+
+	A program unit that represents a particualer action or computation. They are callable and can have return statements.
+
+	Main Method:
+
+		Required to create an exacutable java program. How it works is magic.
+
+	Statements:
+
+		Code within a method.
+		ex. Public void method (){
+			System.out.println("println is a statement");
+			}
+
+Semicolons: End statements this is like periods at the end of sentences
+
+Strings:
+	
+	Strings are surronded by "quotes". Strings may not span more than one line. 
+	ex. "Hello
+		world" is not valid.
+	Strings also must always use double quotes in java.
+
+Escape sequences:
+
+	These are two character sequences that represent one special character.
+	\t --> tab character
+	\n --> new line character
+	\" --> quotation character
+	\\ --> baskslash character
+
+	ex. System.out.println("What \"characters\" does this \\ print?");
+		OUTPUT: What "Characters" does this \ print
+
+print vs println:
+	
+	print will print the string however will not start a new line
+	ex. System.out.print("Hello ");
+		System.out.print("World");
+		OUTPUT: Hello World
+
+	println will print the string and start a new line
+	ex. System.out.println("Hello");
+		Sytem.out.println("World");
+		OUTPUT: Hello
+				World
+
+Indentifiers:
+
+	A name given to a entity ina program, like a class or method.
+	Identifiers must start with a letter, which can be followed by and number of letters or digits.
+	ex. valid: first, hiThere, numStudents, Twoby4
+		also valid: two_plus_two, _count, $2donntus MAX_COUNT
+		ILLEGAL: two+two, hi there, hi-there, 2by4
+
+Comments:
+
+	Text that programmers use to explain their code, this is ignored by the compiler.
+	Its a good idea to include a comment at the beggining of a java file to indicate what a class
+	does along with information about the author.
+
+	There are two ways you can comment in java:
+	/* this is a comment */
+	This can be used for commenting multiply lines at once
+	ex. /*This
+		is
+		a
+		multi-line
+		comment*/
+
+	For single line comments we use:
+	// this is a comment
+	This type of comment can only be used for one line
+
+	Comments can be used after statements:
+	Valid: System.out.println(); //this is a comment after a statement
+	But cannot be used before a statement:
+	Illegal: //This is a comment before a statement System.out.println();

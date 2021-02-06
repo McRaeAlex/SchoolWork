@@ -1,0 +1,35 @@
+Naming conventions:
+
+	java is case sensitive.
+	Although you can write a java program on one line readablity helps and requires correct spacing and comments
+
+File names:
+
+	all file names must match the main class and end with ".java". The ".java" means the file has not been compiled yet. Once the file has been compiled a new file will be created with the extension ".class", this is the bytecode.
+
+Classes:
+
+	all names start with capital letters and must match file name, it is common practive to have no special letters.
+	Class headers always go on their own line
+	ex. Valid: AllMyChildren
+		Illegal: allmychildren
+
+Methods:
+	
+	method headers always go on their own line.
+	all methods start with a lower case letter and every word after that is capitalized.
+	ex. Valid: allMyChildren
+		Illegal: AllMyChildren
+
+Constants:
+
+	all constants must have every letter capitalized and each word must be seperated by a underscore.
+
+Indentifiers:
+
+	A name given to a entity in a program, like a class or method.
+	Identifiers must start with a letter, which can be followed by and number of letters or digits.
+	ex. valid: first, hiThere, numStudents, Twoby4
+		also valid: two_plus_two, _count, $2donntus MAX_COUNT
+		ILLEGAL: two+two, hi there, hi-there, 2by4
+	Its bettter to make an identifier descriptive rather than short and ambigous

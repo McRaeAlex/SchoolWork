@@ -1,0 +1,65 @@
+SETENV(3)                                                        Linux Programmer's Manual                                                       SETENV(3)
+
+[1mNAME[0m
+       setenv - change or add an environment variable
+
+[1mSYNOPSIS[0m
+       [1m#include <stdlib.h>[0m
+
+       [1mint setenv(const char *[4m[22mname[24m[1m, const char *[4m[22mvalue[24m[1m, int [4m[22moverwrite[24m[1m);[0m
+
+       [1mint unsetenv(const char *[4m[22mname[24m[1m);[0m
+
+   Feature Test Macro Requirements for glibc (see [1mfeature_test_macros[22m(7)):
+
+       [1msetenv[22m(), [1munsetenv[22m():
+           _POSIX_C_SOURCE >= 200112L
+               || /* Glibc versions <= 2.19: */ _BSD_SOURCE
+
+[1mDESCRIPTION[0m
+       The  [1msetenv[22m()  function  adds the variable [4mname[24m to the environment with the value [4mvalue[24m, if [4mname[24m does not already exist.  If [4mname[24m does exist in the
+       environment, then its value is changed to [4mvalue[24m if [4moverwrite[24m is nonzero; if [4moverwrite[24m is zero, then the value of [4mname[24m is not changed (and  [1msetenv[22m()
+       returns a success status).  This function makes copies of the strings pointed to by [4mname[24m and [4mvalue[24m (by contrast with [1mputenv[22m(3)).
+
+       The [1munsetenv[22m() function deletes the variable [4mname[24m from the environment.  If [4mname[24m does not exist in the environment, then the function succeeds, and
+       the environment is unchanged.
+
+[1mRETURN VALUE[0m
+       The [1msetenv[22m() function returns zero on success, or -1 on error, with [4merrno[24m set to indicate the cause of the error.
+
+       The [1munsetenv[22m() function returns zero on success, or -1 on error, with [4merrno[24m set to indicate the cause of the error.
+
+[1mERRORS[0m
+       [1mEINVAL [4m[22mname[24m is NULL, points to a string of length 0, or contains an '=' character.
+
+       [1mENOMEM [22mInsufficient memory to add a new variable to the environment.
+
+[1mATTRIBUTES[0m
+       For an explanation of the terms used in this section, see [1mattributes[22m(7).
+
+       ┌─────────────────────┬───────────────┬─────────────────────┐
+       │[1mInterface            [22m│ [1mAttribute     [22m│ [1mValue               [22m│
+       ├─────────────────────┼───────────────┼─────────────────────┤
+       │[1msetenv[22m(), [1munsetenv[22m() │ Thread safety │ MT-Unsafe const:env │
+       └─────────────────────┴───────────────┴─────────────────────┘
+[1mCONFORMING TO[0m
+       POSIX.1-2001, POSIX.1-2008, 4.3BSD.
+
+[1mNOTES[0m
+       POSIX.1 does not require [1msetenv[22m() or [1munsetenv[22m() to be reentrant.
+
+       Prior to glibc 2.2.2, [1munsetenv[22m() was prototyped as returning [4mvoid[24m; more recent glibc versions follow the POSIX.1-compliant prototype shown  in  the
+       SYNOPSIS.
+
+[1mBUGS[0m
+       POSIX.1  specifies that if [4mname[24m contains an '=' character, then [1msetenv[22m() should fail with the error [1mEINVAL[22m; however, versions of glibc before 2.3.4
+       allowed an '=' sign in [4mname[24m.
+
+[1mSEE ALSO[0m
+       [1mclearenv[22m(3), [1mgetenv[22m(3), [1mputenv[22m(3), [1menviron[22m(7)
+
+[1mCOLOPHON[0m
+       This page is part of release 5.02 of the Linux [4mman-pages[24m project.  A description of the project, information about reporting bugs, and  the  latest
+       version of this page, can be found at https://www.kernel.org/doc/man-pages/.
+
+GNU                                                                     2017-09-15                                                               SETENV(3)

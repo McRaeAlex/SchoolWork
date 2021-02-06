@@ -1,0 +1,54 @@
+Parameters:
+    
+    A set of characteristics that distinguish different members of a family of tasks.
+    Ex. you might want a program to do something twenty times, or maybe ten. The number of times
+        the program does that something is the parameter
+
+    Parameters in java allows you to pass local variables into other locations without making them
+    class variables or public.
+
+    Format:
+
+        When creating method:
+
+            public static void <name> (<type><name>) {//note parameters must have a type like a char
+                <statement>
+                <statement>
+                ...
+                <statement>
+            }
+
+        When calling method:
+
+            <name>(<parameter>) //you cannot call a method that expects parameters without them
+
+    Formal Parameter:
+
+        The name of the parameter in the header of the method
+
+    Actual Parameter:
+
+        The name of the value or object passed into the method when calling
+
+Overloading Methods:
+    
+    When you want slight variations of the same function we can overload methods. this is creating
+    methods with identical names but different parameters.
+
+    ex.
+    public static void drawBox (<type><name>) {
+                    <statement>
+                    <statement>
+                    ...
+                    <statement>
+                }
+
+    public static void drawBox () {
+                <statement>
+                <statement>
+                ...
+                <statement>
+            }
+
+    Even though both of these methods have the same name java knows which you are calling due to
+    the difference in parameters.

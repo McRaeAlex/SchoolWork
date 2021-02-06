@@ -1,0 +1,44 @@
+Variable:
+
+    A memory location with a name and a type that stores a value
+
+    Declaration:
+
+        All variables must be declared, when declaring a variable it is given a name and type.
+        Declarations only need to happen once and with throw an error if it happens multiple times.
+        ex. int number;
+            int --> type
+            number --> name
+
+        You can delcare multiple variables of the same type at the same time
+        ex. <type> <name>, <name>, ... <name>;
+
+    Assignments:
+
+        After a variable is declared it can be given a value of the same type. This can be done on
+        one line.
+        ex. int number;
+            number = 5
+            or
+            int number = 5;
+
+        You can assign multiple variables on the same line at the same time
+        ex. <type> <name> = <value>, <name> = <value>, ... <name> = <value>;
+
+    Complex assignments/declaration:
+
+        there is more complex ways you can assign and declare variables
+        ex. int exp = math.exp(3,2);
+        this assigns the value of whatever the method exp returns
+
+String Concatonation:
+
+    Combining multiple strings into one string.
+    ex. "Hello " + "world"
+
+    if you have both strings and integers java automaticly converts them
+    ex. "Hello " + 3 + "World" --> Hello 3World
+
+Increment/Decrement Operators:
+
+    Instead of saying x = x + 1; we can say x++; or if we want subtraction x--;

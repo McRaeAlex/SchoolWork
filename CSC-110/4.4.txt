@@ -1,0 +1,43 @@
+Preconditions and Postconditions:
+
+    Precondition:
+
+        A condition that must be treu before a method executes in
+        order to guarentee the method will work
+
+    Postcondition:
+
+        A condition that the method guarentees will be true after it finishes
+        executing, as long as the precondition were true before the method
+        was called
+
+    Throwing Execeptions:
+
+        if a condition needs to be met before someting happens we throw an
+        exception if its not.
+
+        syntax:
+
+            if (<condition>) {
+                throw new IllegalArgumentException(<error message>);
+            } else {
+                <call method>
+            }
+
+Return Values revisited:
+
+    Now that if and else are know we can use conditionals to determine what we
+    return. Note once a value is returned the method ends
+
+    Syntax:
+
+        public static int <name> (<paramaters>) {
+            int x = <statement>;
+            int y = <statement>;
+            if (<condition>) {
+                return x;
+            } else {
+                return y;
+            }
+
+        }

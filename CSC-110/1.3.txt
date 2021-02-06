@@ -1,0 +1,13 @@
+Errors:
+
+	Syntax Errors:
+
+		grammar errors in code caught by the compiler. For example a missed semicolon.
+
+	Logic Errors:
+
+		Code does not complete task due to coders logic being wrong
+
+	Runtime Errors:
+
+		Logic errors that are so severe that Java stops the program from executing

@@ -1,0 +1,6 @@
+[package]
+name = "assn3"
+version = "0.1.0"
+authors = ["Alex McRae <alex@alexandermcrae.com>"]
+
+[dependencies]

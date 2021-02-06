@@ -1,0 +1,4 @@
+I am the parent 367423
+I am the child 0
+compare.md  original  original.c  output1.txt  output2.txt  threads.c
+Child Complete

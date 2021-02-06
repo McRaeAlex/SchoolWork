@@ -1,0 +1,20 @@
+Binary:
+
+	Binary is base 2 numbers, this is unlike the base 10 numbers we are used too. This means in binary each digit can only have two values 0 or 1. Base 10 can have ten values, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. This was implemented because its much easier to create a circut that works on or off, rather than 10 different voltages.
+
+	ex. base 10: 5 = base 2: 0101
+	it is important to note that this is a signed binary value, not all binary numbers will be signed. Signed simply means the first digit tells us if it is a negative number or not, 1 if it is, 0 if its not.
+
+Memory:
+
+	One digit in binary is refered to as a bit.
+	8 bits is one byte
+	Kilobyte (kb) is 1024 bytes
+
+Java Concepts:
+
+	Java compiles into bytecode which can be run on a Java Virtual Machine (JVM) to execute files. The JVM turns bytecode into machine code at runtime. The reason Java is compiled into bytecode and not binary is because its highly portable so it can run on many different machines as long as they have a JVM.
+
+Java Characteristics:
+
+	Java is a high level, object-oriented, network-savvy, interpreted, secure, high-perfomance, multithreaded, dynamic language.

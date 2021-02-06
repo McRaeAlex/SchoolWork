@@ -1,0 +1,28 @@
+Scope:
+    
+    the part of a program which particular declaration is valid
+
+    Local variable:
+
+        A variable that is only accessable in the structure it is found (method, class, etc)
+        
+        To understand why you might want to do this think of it as a dorm. each student has their 
+        own fridge because if it was just one large fridge everyone grabs from many peoples food
+        would go missing.
+
+Pseudocode:
+
+    English-like descriptions of algorithims.
+    ex. drawing a box
+        //note this is not java
+        for (each of 50 lines) {
+            draw a line of 30 asterisks
+        }
+
+    pseudocode is very easily written down and is used to get ideas down fast that can later be
+    turned into code.
+
+Class Constant:
+
+    A non changing value that is given a name and type. these are declared by the term final
+    ex. final int number = 10;

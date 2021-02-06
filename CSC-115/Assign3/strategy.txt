@@ -1,0 +1,5 @@
+backtracking is done
+now we need to figure out the string that gets added
+we need to substring each time it doeesnt work
+
+to solve this lets use a stack and just pop when we dont need it and push when we do

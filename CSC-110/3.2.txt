@@ -1,0 +1,52 @@
+Return Statements:
+
+    Definition:
+
+        The output of a method or function
+        It is important to note after a return statement is completed any code after the statement
+        in the same function will not be completed.
+
+        Ex.
+        public static boolean true() {
+            return true;
+        }
+
+        Boolean goes instead of void because it defines what type is that we are returning, void
+        means your not returning anything
+
+    Format:
+
+        public static <return type> <name>(<parameters>) {
+            <statement>
+            <statement>
+            <statement>
+            ...
+            <statement>
+            return <value>;
+        }
+
+
+The Math Class:
+
+    What is it:
+
+        The math class is a prebuilt java library that contains basiclly all the math you could ever
+        want to do in java.
+
+    How to use:
+
+        When you want to use a value or function from the math class you call the class then dot
+        then the statement.
+
+        Ex.
+        math.sqrt(4);
+
+        OUTPUT: 2
+
+    Common math things:
+
+    pow --> exponent
+    sqrt --> square root
+    random --> produces a random double
+    round --> rounds a number
+

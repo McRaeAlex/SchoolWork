@@ -1,0 +1,30 @@
+For Loop:
+
+    Suppose you want to do a task multiple times, a for loop with allow you to execute a statement
+    multiple times without writing it out each time.
+
+    Structure:
+
+        for (int i = 0; i < 10; i++) {
+            <statement>
+            <statement>
+            ...
+            <statement>
+        }
+
+        Inside the for loop is considered the body.
+
+    Nested for loops:
+
+        This is for loops within a for loop
+        ex.
+            for (int i = 0; i < 10; i++){
+                for(int j = 0; j < 10; j++) {
+                    <body>
+                }
+            }
+
+Control stucture:
+
+    A structure that controls other statements
+

@@ -1,0 +1,86 @@
+if else statements:
+    
+    Syntax:
+
+        if (<condition>) {
+            <statement>
+            <statement>
+            ...
+            <statement>
+        } else {
+            <statement>
+            <statement>
+            ...
+            <statement>
+        }
+
+    Nesting if else statements:
+
+        if (<condition>) {
+            if (<another_condition>) {
+                <statement>
+                <statement>
+                ...
+                <statement>
+            } else {
+                <statement>
+                <statement>
+                ...
+                <statement>
+            }
+        } else {
+            <statement>
+            <statement>
+            ...
+            <statement>
+        }
+
+    else if statements:
+
+        else if allows you to check something if something isnt true
+        it is the same as putting an if statement in the else statement of 
+        another if statement
+
+        if (<condition>) {
+            <statement>
+            <statement>
+            ...
+            <statement>
+        } else if (<condition>) {
+            <statement>
+            <statement>
+            ...
+            <statement>
+        } else {
+            <statement>
+            <statement>
+            ...
+            <statement>
+        }
+
+    If you want to test multiple things and dont want to use nested if
+    statements. We can boolean logic:
+
+        || --> or
+        && --> and
+        ! --> not
+
+Relational operators:
+
+    == --> equal to
+    != --> not equal to
+    < --> less than
+    > --> greater than
+    <= --> less than or equal to
+    >= --> greater than or equal to
+    ++ --> adds one
+    -- --> subtracts one
+    * --> multiplication
+    / --> division
+    % --> modulus
+    + --> addition
+    - --> subtraction
+
+    When comparing anything that is not a built in type use .equals()
+
+    ex. string.equals(string); --> true

@@ -1,0 +1,53 @@
+---
+Author: Alexander McRae
+Date: Mon April 6 2020
+Title: Report for LLFS
+---
+
+# LLFS
+
+This is my implementation of the LLFS filesystem. Run make to build all the tests.
+
+## Implemented
+
+- [x] Format the disk
+- [x] Creating files in root directory
+- [x] Writing to files
+- [x] Reading from files
+- [x] Creating directories
+- [x] Changing directories
+- [x] Creating sub directories
+- [x] Reading and writing of files in any directory
+- [ ] removing files
+- [ ] Removing directories
+- [ ] Robust
+- [ ] Tests
+
+## Building
+
+run make in the root dir not apps
+
+## Ideas / Strategy
+
+My first strategy is just to get something working. No matter how slow of poorly made.
+Then iterate on it using thing we had learned in class.
+
+## Bugs
+
+- Did not implement indirect blocks
+
+## Implemented things
+
+You can read and write to and from files. You can change the directory and create new directories.
+
+Instead of keeping a store of open files and giving the user a index into the
+store I pass the user a context file_o which then can use to interact with that
+file.
+
+I choose to put the inodes all at the beginning of the filesystem so there is a 
+limited amount of them however it was easier for me to reason about. I put a
+inode bitmap in the superblock to keep track ot it.
+
+In order to allow the user to move around the filesystem but not escape the filesystem,
+dir_change allows the changing of the cwd. The root dir has a self reference to stop a error if cd .. 
+

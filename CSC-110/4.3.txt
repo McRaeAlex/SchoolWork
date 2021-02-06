@@ -1,0 +1,30 @@
+Text Processing:
+
+    Editing and formatting string of text
+
+    printf statement:
+
+        Syntax:
+
+        System.out.printf("This is a int %d, a string %s, a float %f",
+                        <int>, <string>, <float>);
+
+    chars:
+
+        A char is one character and is a primative data type
+        chars are surrounded by '' unlike a string which is ""
+
+        Ex. 'a' is char "a" is a string
+
+        class methods:
+
+        getMemericValue(ch) --> Converts a character that represents a number
+                                into a number
+        isDigit(ch) --> returns a boolean true if its a number false if its not
+        isLetter(ch) --> if the char is a letter true else false
+        isLowerCase(ch) --> true if lower case
+        isUpperCase(ch) --> true is upper case
+        toLowerCase(ch) --> changes to lower case
+        toUpperCase(ch) --> changes to upper case
+
+        
